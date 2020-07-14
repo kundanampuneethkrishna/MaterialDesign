@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Home">
+
+    <!-- TODO: Update blank fragment layout -->
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       >
+
+       <androidx.cardview.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:layout_marginStart="10dp"
+           android:layout_marginEnd="10dp"
+           android:layout_marginBottom="10dp"
+           app:cardCornerRadius="10dp"
+           app:cardElevation="10dp"
+           >
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="@drawable/design">
+               <ImageView
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:src="@drawable/admin"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Admin"
+                   android:textSize="30sp"
+                   android:textColor="#FFFFFF"
+                   android:layout_gravity="center"
+                   android:layout_marginStart="20dp"
+                   android:layout_marginEnd="40dp"
+                   tools:ignore="RtlCompat" />
+
+               <View
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:background="@drawable/curve"
+                   android:layout_gravity="end|bottom" />
+           </LinearLayout>
+
+
+       </androidx.cardview.widget.CardView>
+
+       <com.tomer.fadingtextview.FadingTextView
+           android:id="@+id/fadingTextView"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:timeout="500"
+           app:texts="@array/examples" />
+
+   </LinearLayout>
+
+</FrameLayout>
